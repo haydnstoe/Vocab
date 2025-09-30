@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Magda  2025-09-30</title>
+  <title></title>
   <style>
     :root{--accent:#0b63a3;--muted:#555;--card:#fafafa}
     body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial; margin:24px; color:#111; max-width:920px}
@@ -27,8 +27,8 @@
 </head>
 <body>
   <header>
-    <h1>Vocabulary extraction and Multiple‑Choice Test</h1>
-    <p class="small">This page contains the extracted target vocabulary with meanings and a multiple‑choice version of Exercises 1–3 from the lesson. Complete the quiz and click "Check answers" to see your score.</p>
+    <h1></h1>
+    <p class="small">This page contains the extracted target vocabulary with meanings and an updated multiple‑choice version of Exercises 1–3 (matching and sentence transformation). Complete the quiz and click "Check answers" to see your score.</p>
   </header>
 
   <section class="card" id="vocab">
@@ -51,10 +51,10 @@
   </section>
 
   <section class="card" id="test">
-    <h2>Multiple‑Choice Test (Exercises 1–3)</h2>
+    <h2>Multiple‑Choice Test (Updated)</h2>
 
     <form id="quizForm" onsubmit="return false;">
-      <!-- Exercise 1: Matching -->
+      <!-- Matching questions (now four matching items) -->
       <div class="mcq" id="q1">
         <strong>Question 1 — Matching</strong>
         <p class="small">Match the word to the correct definition. Choose the best option.</p>
@@ -73,25 +73,48 @@
         <label class="option"><input type="radio" name="q1b" value="D"> D. A limitation or restriction</label>
       </div>
 
-      <!-- Exercise 2: Collocation sorting -->
-      <div class="mcq" id="q2">
-        <strong>Question 2 — Collocation sorting</strong>
-        <p class="small">Which collocation best fits the PEOPLE/CONDITIONS group (not ACTIONS)? Choose the most appropriate option.</p>
-        <p>Options (choose one):</p>
-        <label class="option"><input type="radio" name="q2" value="A"> A. implement a policy</label>
-        <label class="option"><input type="radio" name="q2" value="B"> B. time constraints</label>
-        <label class="option"><input type="radio" name="q2" value="C"> C. revise the proposal</label>
-        <label class="option"><input type="radio" name="q2" value="D"> D. take accountability</label>
+      <div class="mcq" id="q1c">
+        <p><em>Word:</em> feasible</p>
+        <label class="option"><input type="radio" name="q1c" value="A"> A. To put into action</label>
+        <label class="option"><input type="radio" name="q1c" value="B"> B. Possible and practical to do</label>
+        <label class="option"><input type="radio" name="q1c" value="C"> C. Responsibility for outcomes</label>
+        <label class="option"><input type="radio" name="q1c" value="D"> D. Strong and effective</label>
       </div>
 
-      <!-- Exercise 3: Sentence transformation -->
-      <div class="mcq" id="q3">
-        <strong>Question 3 — Sentence transformation</strong>
+      <div class="mcq" id="q1d">
+        <p><em>Word:</em> stakeholder</p>
+        <label class="option"><input type="radio" name="q1d" value="A"> A. To change in order to improve</label>
+        <label class="option"><input type="radio" name="q1d" value="B"> B. Person or group with an interest or concern</label>
+        <label class="option"><input type="radio" name="q1d" value="C"> C. Limitation or restriction</label>
+        <label class="option"><input type="radio" name="q1d" value="D"> D. To expect or predict</label>
+      </div>
+
+      <!-- Sentence transformation questions (three items) -->
+      <div class="mcq" id="q2">
+        <strong>Question 5 — Sentence transformation</strong>
         <p class="small">Transform the sentence using the target word shown. Choose the sentence that correctly transforms "We changed the plan because of the budget." using the word <strong>constraint</strong>.</p>
-        <label class="option"><input type="radio" name="q3" value="A"> A. "We changed the plan despite the constraint of the budget."</label>
-        <label class="option"><input type="radio" name="q3" value="B"> B. "Because of budget constraints, we revised the plan."</label>
-        <label class="option"><input type="radio" name="q3" value="C"> C. "The plan changed by constraint of budget."</label>
-        <label class="option"><input type="radio" name="q3" value="D"> D. "We constrained the plan with the budget changes."</label>
+        <label class="option"><input type="radio" name="q2" value="A"> A. "We changed the plan despite the constraint of the budget."</label>
+        <label class="option"><input type="radio" name="q2" value="B"> B. "Because of budget constraints, we revised the plan."</label>
+        <label class="option"><input type="radio" name="q2" value="C"> C. "The plan changed by constraint of budget."</label>
+        <label class="option"><input type="radio" name="q2" value="D"> D. "We constrained the plan with the budget changes."</label>
+      </div>
+
+      <div class="mcq" id="q3">
+        <strong>Question 6 — Sentence transformation</strong>
+        <p class="small">Transform "They made sure someone was responsible." using the word <strong>accountability</strong>. Choose the best transformed sentence.</p>
+        <label class="option"><input type="radio" name="q3" value="A"> A. "They ensured accountability was assigned to someone."</label>
+        <label class="option"><input type="radio" name="q3" value="B"> B. "They were accountable for someone."</label>
+        <label class="option"><input type="radio" name="q3" value="C"> C. "Someone was made accountable by theming."</label>
+        <label class="option"><input type="radio" name="q3" value="D"> D. "They responsibleed someone with accountability."</label>
+      </div>
+
+      <div class="mcq" id="q4">
+        <strong>Question 7 — Sentence transformation</strong>
+        <p class="small">Transform "We will put the new timetable into operation next week." using the word <strong>implement</strong>. Choose the correct sentence.</p>
+        <label class="option"><input type="radio" name="q4" value="A"> A. "We will implement the new timetable next week."</label>
+        <label class="option"><input type="radio" name="q4" value="B"> B. "We will put into implement the new timetable next week."</label>
+        <label class="option"><input type="radio" name="q4" value="C"> C. "The new timetable will be implemented by next weeked."</label>
+        <label class="option"><input type="radio" name="q4" value="D"> D. "We will be implementingly put the timetable."</label>
       </div>
 
       <button class="btn" onclick="gradeQuiz()">Check answers</button>
@@ -106,38 +129,49 @@
 
   <script>
     function gradeQuiz(){
-      const answers = { q1: 'B', q1b: 'A', q2: 'B', q3: 'B' };
+      const answers = {
+        q1: 'B',    // accountability = responsibility
+        q1b: 'A',   // implement = to put into action
+        q1c: 'B',   // feasible = possible and practical
+        q1d: 'B',   // stakeholder = person/group with interest
+        q2: 'B',    // constraint transform
+        q3: 'A',    // accountability transform
+        q4: 'A'     // implement transform
+      };
       const form = document.getElementById('quizForm');
-      let score = 0, total = 4;
+      let score = 0;
+      const keys = Object.keys(answers);
+      const total = keys.length;
       const feedbackDiv = document.getElementById('feedback');
       feedbackDiv.innerHTML = '';
-      // Collect and evaluate
-      for(const key of Object.keys(answers)){
+      for(const key of keys){
         const el = form.querySelector('[name="'+key+'"]:checked');
         const user = el ? el.value : null;
-        const container = document.getElementById(key);
         const itemDiv = document.createElement('div');
-        itemDiv.className = 'result ' + (user === answers[key] ? 'correct' : 'wrong');
-        itemDiv.innerHTML = '<strong>' + key.toUpperCase() + ':</strong> ' + (user ? (user === answers[key] ? 'Correct' : 'Incorrect') : 'No answer') + 
-                            ' — ' + explanation(key, answers[key]);
+        const correct = answers[key];
+        itemDiv.className = 'result ' + (user === correct ? 'correct' : 'wrong');
+        itemDiv.innerHTML = '<strong>' + key.toUpperCase() + ':</strong> ' + (user ? (user === correct ? 'Correct' : 'Incorrect') : 'No answer') +
+                            ' — ' + explanation(key, correct);
         feedbackDiv.appendChild(itemDiv);
-        if(user === answers[key]) score++;
+        if(user === correct) score++;
       }
       const summary = document.createElement('div');
       summary.className = 'result';
       summary.style.marginTop = '12px';
       summary.textContent = 'Score: ' + score + ' / ' + total;
       feedbackDiv.appendChild(summary);
-      // Scroll to feedback
       summary.scrollIntoView({behavior:'smooth', block:'center'});
     }
 
     function explanation(q, correct){
       const map = {
         q1: 'Accountability means responsibility for outcomes (correct: B).',
-        q1b: 'Implement = to put into action (correct: A).',
-        q2: 'Time constraints refer to conditions/limitations on time and belong to PEOPLE/CONDITIONS group (correct: B).',
-        q3: 'The natural transformation is "Because of budget constraints, we revised the plan." (correct: B).'
+        q1b: 'Implement means to put into action (correct: A).',
+        q1c: 'Feasible = possible and practical to do (correct: B).',
+        q1d: 'Stakeholder = person or group with an interest or concern (correct: B).',
+        q2: 'Natural transformation: "Because of budget constraints, we revised the plan." (correct: B).',
+        q3: 'Natural transformation: "They ensured accountability was assigned to someone." (correct: A).',
+        q4: 'Natural transformation: "We will implement the new timetable next week." (correct: A).'
       };
       return map[q] || '';
     }
